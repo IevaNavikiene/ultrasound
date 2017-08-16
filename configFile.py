@@ -1,0 +1,35 @@
+class Config():
+	def __init__(self):
+		self.pickle_file = 'elips.pickle'
+		self.trainNervesPickle = 'nervesAugmented2.pickle'
+		self.pickleName = 'generatedNerves.pickle'
+		self.trainNervesLSTMPickle = 'nervesLSTM.pickle'
+		self.masksPickle = 'masks3test.pickle'
+		self.elipseList = []
+		self.filesList = []
+		self.maxHeight = 70
+		self.maxWidth = 60
+		self.fullImageHeight = 420
+		self.fullImageWidth = 580
+		self.imageHeight = 5
+		self.imageWidth = 7
+		self.maskDir = './input/nervesMasks/'
+		self.imgDir = './input/nerves/'
+		self.imgFalseDir = './input/notNerves/'
+		self.imgClassDir = './input/NervesClass/'
+		self.imgFalseClassDir = './input/notNervesClass/'
+		self.trainDir = './input/trainChanged/'
+		self.imgNervesContoursDir = './input/generatedImages/'
+		self.generatedImages = './input/generatedMoreImages/'
+		self.modelWeightsFilePath = 'nerve_weights_tensorflow8.ckpt'
+		self.modelWeightsFilePathLSTM = 'nerve_weights_tensorflowLSTM07_24.ckpt'
+		self.defaultCentroidX = 200
+		self.defaultCentroidY = 100
+		self.partForValidation = 0.25
+		self.partForTest = 0.25
+		self.numClasses = 2
+		self.batch_size = 200
+		self.nbEpoch = 50
+		self.randomState =3
+		self.xList = [0, 32, 64, 96, 128, 160, 192, 0, 32, 64, 96, 128, 160, 192, 0, 32, 64, 96, 128, 160, 192, 0, 32, 64, 96, 128, 160, 192, 0, 32, 64, 96, 128, 160, 192]
+		self.yList = [0, 0, 0, 0, 0, 0, 0, 32, 32, 32, 32, 32, 32, 32, 64, 64, 64, 64, 64, 64, 64, 96, 96, 96, 96, 96, 96, 96, 128, 128, 128, 128, 128, 128, 128]

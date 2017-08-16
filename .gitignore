@@ -1,0 +1,12 @@
+/nbproject
+*.pyc
+*.tif
+*.vtp
+*.csv
+*.vti
+*.pyc
+*.pickle
+/input
+/learnedModels
+/savefWeights
+/unusedPickleFiles
